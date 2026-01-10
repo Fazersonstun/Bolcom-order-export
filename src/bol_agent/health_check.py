@@ -98,7 +98,7 @@ def check_api_connectivity() -> HealthCheckResult:
         return HealthCheckResult(
             name="API Connectivity",
             passed=True,
-            message=f"Successfully connected to API",
+            message="Successfully connected to API",
             details={"order_count": order_count}
         )
     except BolAPIError as e:
